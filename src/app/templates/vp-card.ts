@@ -1,23 +1,24 @@
 export interface VPCardInterface {
     cost: number,
     value: number,
+    abilityText: string;
     spend: void
 }
 
 export class VPCard implements VPCardInterface {
-    constructor(cost: number, value: number) {
+    constructor(cost: number, value: number, abilityText: string) {
         this.cost = cost;
         this.value = value;
     }
 
     spend() {
         console.log("this card has been spent")
-    };
+    }
 }
 
 export class VPCard2 extends VPCard {
     constructor() {
-        super(1, 2)
+        super(1, 2, "Move an incomplete chapter from another player's guildhall to yours")
     }
 
     ability() {
@@ -27,7 +28,7 @@ export class VPCard2 extends VPCard {
 
 export class VPCard3A extends VPCard {
     constructor() {
-        super(1, 3)
+        super(1, 3, "Swap one card from your guildhall with any two cards from one other player's guildhall")
     }
 
     ability() {
@@ -37,7 +38,7 @@ export class VPCard3A extends VPCard {
 
 export class VPCard3B extends VPCard {
     constructor() {
-        super(1, 3)
+        super(1, 3, "Put any number of cards from your hand into your guildhall")
     }
 
     ability() {
@@ -47,7 +48,7 @@ export class VPCard3B extends VPCard {
 
 export class VPCard4A extends VPCard {
     constructor() {
-        super(1, 4)
+        super(1, 4, "Draw 5 cards from the draw deck")
     }
 
     ability() {
@@ -57,7 +58,7 @@ export class VPCard4A extends VPCard {
 
 export class VPCard4B extends VPCard {
     constructor() {
-        super(1, 4)
+        super(1, 4, "Gain an action")
     }
 
     ability() {
@@ -67,7 +68,7 @@ export class VPCard4B extends VPCard {
 
 export class VPCard4C extends VPCard {
     constructor() {
-        super(1, 4)
+        super(1, 4, "Take a card from another player's guildhall and put it in your own")
     }
 
     ability() {
@@ -77,23 +78,23 @@ export class VPCard4C extends VPCard {
 
 export class VPCard5 extends VPCard {
     constructor() {
-        super(1, 5)
+        super(1, 5, "")
     }
 }
 
 export class VPCard7 extends VPCard {
     constructor() {
-        super(2, 7)
+        super(2, 7, "Gain 2 actions")
     }
 
     ability() {
-        console.log("7pt gives +2 actions")
+        console.log("Gain 2 actions")
     }
 }
 
 export class VPCard9 extends VPCard {
     constructor() {
-        super(2, 9)
+        super(2, 9, "")
     }
 }
 
