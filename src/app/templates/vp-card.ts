@@ -1,14 +1,18 @@
-export interface VPCardInterface {
+export interface IVPCard {
     cost: number,
     value: number,
     abilityText: string;
-    spend: void
+    spend: any;
 }
 
-export class VPCard implements VPCardInterface {
-    constructor(cost: number, value: number, abilityText: string) {
+export class VPCard implements IVPCard {
+    cost: number;
+    value: number;
+    abilityText: string;
+    constructor( cost: number, value: number, abilityText: string) {
         this.cost = cost;
         this.value = value;
+        this.abilityText = abilityText;
     }
 
     spend() {

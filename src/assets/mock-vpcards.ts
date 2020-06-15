@@ -53,9 +53,7 @@ const createVPDeck = () => {
 
     }
 
-    return VPCardDeck;
+    return vpCardDeck;
 }
-
-console.log(createVPDeck());
 
 export default createVPDeck();
