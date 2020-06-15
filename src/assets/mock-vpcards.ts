@@ -1,13 +1,16 @@
-import { VPCard, VPCard2, VPCard3A, VPCard3B, VPCard4A, VPCard4B, VPCard4C, VPCard5, VPCard7, VPCard9 } from "../app/templates/vp-card.ts"
+import { VPCard, VPCard2, VPCard3A, VPCard3B, VPCard4A, VPCard4B, VPCard4C, VPCard5, VPCard7, VPCard9 } from "../app/templates/vp-card";
+
+
+
 const createVPDeck = () => {
 
     let vpCardDeck: VPCard[] = [];
 
-    for (let index: number = 0, index <= 30, index++) {
+    for (let index:number = 0; index <= 30; index++) {
 
-        let newVPCard: any;
+        let newVPCard: VPCard;
 
-        switch(expression) {
+        switch(index) {
             case index <=3: {
                 newVPCard = new VPCard2();
                 break;
