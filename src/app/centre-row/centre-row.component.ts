@@ -14,6 +14,7 @@ export class CentreRowComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.vpDeck)
+    console.log(this.vpDeck[0])
   }
-
 }
