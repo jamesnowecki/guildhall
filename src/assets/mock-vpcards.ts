@@ -10,7 +10,7 @@ const createVPDeck = () => {
 
         let newVPCard: VPCard;
 
-        switch(index) {
+        switch(true) {
             case index <=3: {
                 newVPCard = new VPCard2();
                 break;
