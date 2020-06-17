@@ -6,40 +6,40 @@ const createVPDeck = () => {
 
     let vpCardDeck: VPCard[] = [];
 
-    for (let index:number = 0; index <= 30; index++) {
+    for (let index:number = 0; index < 30; index++) {
 
         let newVPCard: VPCard;
 
         switch(true) {
-            case index <=3: {
+            case index <3: {
                 newVPCard = new VPCard2();
                 break;
             }
-            case index <=6: {
+            case index <6: {
                 newVPCard = new VPCard3A();
                 break;
             }
-            case index <=9: {
+            case index <9: {
                 newVPCard = new VPCard3B();
                 break;
             }
-            case index <=12: {
+            case index <12: {
                 newVPCard = new VPCard4A();
                 break;
             }
-            case index <=15: {
+            case index <15: {
                 newVPCard = new VPCard4B();
                 break;
             }
-            case index <= 18: {
+            case index <18: {
                 newVPCard = new VPCard4C();
                 break;
             }
-            case index <=21: {
+            case index <21: {
                 newVPCard = new VPCard7();
                 break;
             }
-            case index <=24: {
+            case index <24: {
                 newVPCard = new VPCard9();
                 break;
             }

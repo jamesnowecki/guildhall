@@ -10,11 +10,12 @@ import vpDeckUnshuffled from "../../assets/mock-vpcards";
 export class CentreRowComponent implements OnInit {
 
   vpDeck = vpDeckUnshuffled;
-
+  visibleVPDeck = this.vpDeck.slice(this.vpDeck.length - 5, this.vpDeck.length + 1 )
   constructor() { }
 
   ngOnInit(): void {
     console.log(this.vpDeck)
     console.log(this.vpDeck[0])
+    console.log(this.visibleVPDeck)
   }
 }

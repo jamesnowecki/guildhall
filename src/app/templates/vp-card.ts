@@ -9,6 +9,7 @@ export class VPCard implements IVPCard {
     cost: number;
     value: number;
     abilityText: string;
+    
     constructor( cost: number, value: number, abilityText: string) {
         this.cost = cost;
         this.value = value;
