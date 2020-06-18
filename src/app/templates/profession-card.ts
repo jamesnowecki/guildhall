@@ -5,6 +5,8 @@ export interface IProfessionCard {
     playCard: any;
 }
 
+
+
 export class ProfessionCard implements IProfessionCard {
     profession: string;
     color: string;
@@ -19,6 +21,10 @@ export class ProfessionCard implements IProfessionCard {
     playCard() {
         console.log("this card has been played")
     }
+}
+
+export interface IProfessionClass {
+    new (name: string): ProfessionCard;
 }
 
 export class AssassinCard extends ProfessionCard {

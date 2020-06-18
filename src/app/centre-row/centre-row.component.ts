@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { IVPCard } from "../templates/vp-card";
 import vpDeckUnshuffled from "../../assets/mock-vpcards";
 
 @Component({
@@ -11,6 +10,7 @@ export class CentreRowComponent implements OnInit {
 
   vpDeck = vpDeckUnshuffled;
   visibleVPDeck = this.vpDeck.slice(this.vpDeck.length - 5, this.vpDeck.length + 1 )
+  
   constructor() { }
 
   ngOnInit(): void {
