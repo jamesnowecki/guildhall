@@ -18,7 +18,7 @@ const incompleteChapter1: ProfessionCard[] = [professionCards[0], professionCard
 
 const incompleteChapter2: ProfessionCard[] = [professionCards[20], professionCards[24], professionCards[29]];
 
- completedChapter: ProfessionCard[] = [professionCards[20], professionCards[24], professionCards[29], professionCards[34], professionCards[39]];
+const completedChapter: ProfessionCard[] = [professionCards[20], professionCards[24], professionCards[29], professionCards[34], professionCards[39]];
 
 const mockPlayer: object = {
     "hand": shortProfessionArray, 
