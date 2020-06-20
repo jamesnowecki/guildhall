@@ -1,0 +1,15 @@
+.chapter-incomplete {
+    width: 200px;
+    height: 250px;
+    background-color: blanchedalmond;
+
+    .color-checker {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+            border-radius: 100%;
+        }
+    }
+}

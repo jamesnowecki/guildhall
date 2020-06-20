@@ -1,0 +1,13 @@
+.decks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 500px;
+
+    .profession-deck {
+        width: 200px;
+        height: 250px;
+        border-radius: 10px;
+        background-color: brown;
+    }
+}

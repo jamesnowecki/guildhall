@@ -22,7 +22,7 @@ const createSubDeck = (profession: IProfessionClass): ProfessionCard[] => {
                 break;
             }
             case index < 16: {
-                newProfessionCard = new profession("red");
+                newProfessionCard = new profession("yellow");
                 break;
             }
             default: {
