@@ -16,7 +16,7 @@ export class ProfessionDeckComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.professionDeck)
+    // console.log(this.professionDeck)
   }
 
 }

@@ -1,0 +1,22 @@
+<div class="player-board">
+    <div>
+        <div class="hand">
+            <p>Player hand</p>
+            <app-profession-card *ngFor="let card of hand" [professionCard]="card"></app-profession-card>
+        </div>
+        <div class=guildhall>
+            <div>
+                <p>Incomplete chapters</p>
+                <app-chapter-incomplete *ngFor="chapter of incompleteChapters"></app-chapter-incomplete>
+            </div>
+            <div>
+                <p>Complete chapters</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>
+            VP Area
+        </p>
+    </div>
+</div>

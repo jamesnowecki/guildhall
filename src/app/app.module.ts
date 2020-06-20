@@ -9,6 +9,8 @@ import { CentreRowComponent } from './centre-row/centre-row.component';
 import { DiscardPileComponent } from './discard-pile/discard-pile.component';
 import { ProfessionDeckComponent } from './profession-deck/profession-deck.component';
 import { ChapterIncompleteComponent } from './chapter-incomplete/chapter-incomplete.component';
+import { PlayerBoardComponent } from './player-board/player-board.component';
+import { ChapterCompleteComponent } from './chapter-complete/chapter-complete.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ChapterIncompleteComponent } from './chapter-incomplete/chapter-incompl
     CentreRowComponent,
     DiscardPileComponent,
     ProfessionDeckComponent,
-    ChapterIncompleteComponent
+    ChapterIncompleteComponent,
+    PlayerBoardComponent,
+    ChapterCompleteComponent
   ],
   imports: [
     BrowserModule,

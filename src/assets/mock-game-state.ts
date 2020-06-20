@@ -20,14 +20,14 @@ const incompleteChapter2: ProfessionCard[] = [professionCards[20], professionCar
 
 const completedChapter: ProfessionCard[] = [professionCards[20], professionCards[24], professionCards[29], professionCards[34], professionCards[39]];
 
-const mockPlayer: object = {
-    "hand": shortProfessionArray, 
-    "guildhall": {
-                    "incompleteChapters": [incompleteChapter1, incompleteChapter2],
-                    "completeChapters": completedChapter,
-                    "claimedVictoryCards": claimedVPCards
+const mockPlayer: any = {
+    hand: shortProfessionArray, 
+    guildhall: {
+                    incompleteChapters: [incompleteChapter1, incompleteChapter2],
+                    completeChapters: completedChapter,
+                    claimedVictoryCards: claimedVPCards
                 },
-    "victoryTokens": 4,
+    victoryTokens: 4,
 };
 
 export default mockPlayer;
