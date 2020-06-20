@@ -1,11 +1,9 @@
 <div class="chapter-incomplete">
     <p>{{incompleteChapter[0].profession}} Chapter</p>
-    <div *ngFor="let card in incompleteChapter">
-        <div class="color-checker">
+        <div class="color-checker" *ngFor="let card of incompleteChapter">
             <div [style.background-color]="getColor(card.color)"></div>
             <p>
                 {{card.color}}
             </p>
         </div>
-    </div>
 </div>

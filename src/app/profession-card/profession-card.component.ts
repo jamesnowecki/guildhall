@@ -12,19 +12,19 @@ export class ProfessionCardComponent implements OnInit {
   getColor(color: string): string {
     switch(color) {
       case "blue": {
-        return "blue";
+        return "#42afee";
       }
       case "red": {
-        return "red";
+        return "tomato";
       }
       case "yellow": {
-        return "yellow";
+        return "#f8f550";
       }
       case "purple": {
-        return "purple";
+        return "#795de0";
       }
       case "green": {
-        return "green";
+        return "#66ee78";
       }
     }
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ProfessionCard } from '../templates/profession-card';
 
 @Component({
@@ -7,31 +7,34 @@ import { ProfessionCard } from '../templates/profession-card';
   styleUrls: ['./chapter-incomplete.component.scss']
 })
 export class ChapterIncompleteComponent implements OnInit {
-  incompleteChapter: ProfessionCard[] = [];
+
+  @Input() incompleteChapter: ProfessionCard[];
   
   getColor(color: string): string {
     switch(color) {
       case "blue": {
-        return "blue";
+        return "#42afee";
       }
       case "red": {
-        return "red";
+        return "tomato";
       }
       case "yellow": {
-        return "yellow";
+        return "#f8f550";
       }
       case "purple": {
-        return "purple";
+        return "#795de0";
       }
       case "green": {
-        return "green";
+        return "#66ee78";
       }
     }
   }
 
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.incompleteChapter)
   }
 
 }
