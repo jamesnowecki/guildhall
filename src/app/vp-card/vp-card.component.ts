@@ -7,7 +7,7 @@ import { IVPCard, VPCard } from '../templates/vp-card';
   styleUrls: ['./vp-card.component.scss']
 })
 export class VpCardComponent implements OnInit {
-  @Input() vpCard: IVPCard;
+  @Input() vpCard: VPCard;
 
   constructor() { }
 

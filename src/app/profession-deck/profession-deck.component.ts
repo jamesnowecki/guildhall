@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import professionDeckUnshuffled from "../../assets/mock-profession-cards";
+import { ProfessionCard } from "../templates/profession-card";
 
 @Component({
   selector: 'app-profession-deck',
@@ -8,7 +9,9 @@ import professionDeckUnshuffled from "../../assets/mock-profession-cards";
 })
 export class ProfessionDeckComponent implements OnInit {
 
-  professionDeck = professionDeckUnshuffled;
+  professionDeck: ProfessionCard[] = professionDeckUnshuffled;
+  professionDeckDiscard: ProfessionCard[] = professionDeckUnshuffled;
+  professionDeckDiscardTopCard: ProfessionCard = this.professionDeckDiscard[this.professionDeckDiscard.length -1];
 
   constructor() { }
 

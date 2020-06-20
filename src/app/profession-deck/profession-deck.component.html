@@ -1,1 +1,8 @@
-<p>profession-deck works!</p>
+<div class="profession-deck">
+    <p>Profession Deck</p>
+    <p>{{professionDeck.length}} cards remaining</p>
+</div>
+<div class="profession-deck-discard">
+    <app-profession-card [professionCard]="professionDeckDiscardTopCard"></app-profession-card>
+    <p>Discards: {{professionDeckDiscard.length}} deep</p>
+</div>

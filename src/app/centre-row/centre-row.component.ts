@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import vpDeckUnshuffled from "../../assets/mock-vpcards";
+import { VPCard } from "../templates/vp-card";
 
 @Component({
   selector: 'app-centre-row',
@@ -8,14 +9,20 @@ import vpDeckUnshuffled from "../../assets/mock-vpcards";
 })
 export class CentreRowComponent implements OnInit {
 
-  vpDeck = vpDeckUnshuffled;
+  vpDeck: VPCard[] = this.FYShuffle(vpDeckUnshuffled);
   visibleVPDeck = this.vpDeck.slice(this.vpDeck.length - 5, this.vpDeck.length + 1 )
 
   constructor() { }
 
-  FYShuffle(): void {
+  FYShuffle(array: VPCard[]): VPCard[] {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
 
+    return array;
   }
+  
 
   ngOnInit(): void {
     console.log(this.vpDeck)

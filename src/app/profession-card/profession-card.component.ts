@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IProfessionCard } from '../templates/profession-card';
 
 @Component({
   selector: 'app-profession-card',
@@ -6,6 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profession-card.component.scss']
 })
 export class ProfessionCardComponent implements OnInit {
+  @Input() professionCard: IProfessionCard;
+
+  getColor(color: string): string {
+    switch(color) {
+      case "blue": {
+        return "blue";
+      }
+      case "red": {
+        return "red";
+      }
+      case "yellow": {
+        return "yellow";
+      }
+      case "purple": {
+        return "purple";
+      }
+      case "green": {
+        return "green";
+      }
+    }
+  }
 
   constructor() { }
 
