@@ -116,7 +116,7 @@ export class TraderCard extends ProfessionCard {
            [
                {0: "Swap one card in your guildhall with one from the guildhall of another player"},
                {2: "Swap two cards in your guildhall with two from the guildhall of another player"},
-               {4: "Swap one chapter (containing at least one card) with a chapter from another player's guildhall"}
+               {4: "Swap one chapter with a chapter from another player's guildhall"}
            ]
         )
     }

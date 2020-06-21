@@ -1,6 +1,28 @@
 .profession-card {
     width: 200px;
     height: 250px;
-    padding: 10px;
     border-radius: 10px;
+
+    p {
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    section {
+        background-color: white;
+        padding: 10px;
+
+        img {
+            display: block;
+            height: 100px;
+            margin: 0 auto;
+        }
+    }
+   
+    .ability {
+        text-align: left;
+        font-size: x-small;
+        margin: 0 5px;
+    }
 }

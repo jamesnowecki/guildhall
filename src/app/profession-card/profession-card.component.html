@@ -1,7 +1,9 @@
 <div class="profession-card" [style.background-color]="getColor(professionCard.color)">
     <p>{{professionCard.profession}}</p>
-    <img src={{professionCard.image}} alt="">
+    <section>
+        <img src={{professionCard.image}}>
+    </section>
     <div *ngFor="let ability of professionCard.abilityList">
-        <p *ngFor="let item of ability | keyvalue">{{item.key}}: {{item.value}}</p>
+        <p *ngFor="let item of ability | keyvalue" class="ability">{{item.key}}: {{item.value}}</p>
     </div>
 </div>
