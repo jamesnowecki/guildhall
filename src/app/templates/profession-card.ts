@@ -1,3 +1,5 @@
+import assassinPic from "../../assets/images/assassin";
+
 export interface IProfessionCard {
     profession: string;
     color: string;

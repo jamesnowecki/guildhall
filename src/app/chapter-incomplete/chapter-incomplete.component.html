@@ -3,7 +3,7 @@
         <div class="color-checker" *ngFor="let card of incompleteChapter">
             <div [style.background-color]="getColor(card.color)"></div>
             <p>
-                {{card.color}}
+                {{card.color | titlecase}}
             </p>
         </div>
 </div>
