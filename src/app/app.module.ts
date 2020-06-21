@@ -11,6 +11,8 @@ import { ProfessionDeckComponent } from './profession-deck/profession-deck.compo
 import { ChapterIncompleteComponent } from './chapter-incomplete/chapter-incomplete.component';
 import { PlayerBoardComponent } from './player-board/player-board.component';
 import { ChapterCompleteComponent } from './chapter-complete/chapter-complete.component';
+import { OpponentBoardComponent } from './opponent-board/opponent-board.component';
+import { ClaimedVpCardComponent } from './claimed-vp-card/claimed-vp-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ChapterCompleteComponent } from './chapter-complete/chapter-complete.co
     ProfessionDeckComponent,
     ChapterIncompleteComponent,
     PlayerBoardComponent,
-    ChapterCompleteComponent
+    ChapterCompleteComponent,
+    OpponentBoardComponent,
+    ClaimedVpCardComponent
   ],
   imports: [
     BrowserModule,

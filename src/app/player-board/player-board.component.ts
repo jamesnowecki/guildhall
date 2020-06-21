@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import mockPlayer from "../../assets/mock-game-state";
 import { ProfessionCard } from '../templates/profession-card';
+import { VPCard } from '../templates/vp-card';
 
 @Component({
   selector: 'app-player-board',
@@ -12,6 +13,7 @@ export class PlayerBoardComponent implements OnInit {
   incompleteChapters: any = mockPlayer.guildhall.incompleteChapters;
   completeChapters: any = mockPlayer.guildhall.completeChapters;
   hand: ProfessionCard[] = mockPlayer.hand;
+  VPArray: VPCard[] = mockPlayer.vpArray;
   playerCards = mockPlayer;
   constructor() { }
 

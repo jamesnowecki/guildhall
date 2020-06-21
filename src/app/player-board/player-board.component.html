@@ -25,5 +25,8 @@
         <p>
             VP Area
         </p>
+        <div>
+            <app-claimed-vp-card *ngFor="let card of VPArray" [VPCard]="card"></app-claimed-vp-card>
+        </div>
     </div>
 </div>

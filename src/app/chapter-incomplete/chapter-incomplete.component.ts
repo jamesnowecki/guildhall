@@ -30,6 +30,9 @@ export class ChapterIncompleteComponent implements OnInit {
     }
   }
 
+  getFirstLetter(color: string): string {
+    return color.split("")[0].toUpperCase();
+  }
 
   constructor() { }
 

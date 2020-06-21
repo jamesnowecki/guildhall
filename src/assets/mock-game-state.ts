@@ -28,6 +28,7 @@ const mockPlayer: any = {
                 claimedVictoryCards: claimedVPCards
                 },
     victoryTokens: 4,
+    vpArray: claimedVPCards,
 };
 
 export default mockPlayer;
