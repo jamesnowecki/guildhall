@@ -1,9 +1,12 @@
 <div class="profession-card" [style.background-color]="getColor(professionCard.color)">
-    <p>{{professionCard.profession}}</p>
+    <div class="header">
+        <p class="letter">{{getColorFirstLetter(professionCard.color)}}</p>
+        <p>{{professionCard.profession}}</p>
+    </div>
     <section>
         <img src={{professionCard.image}}>
     </section>
-    <div *ngFor="let ability of professionCard.abilityList">
+    <div *ngFor="let ability of professionCard.abilityList" class="ability-list">
         <p *ngFor="let item of ability | keyvalue" class="ability"><span>{{item.key}}:</span> {{item.value}}</p>
     </div>
 </div>

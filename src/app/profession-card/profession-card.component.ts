@@ -29,6 +29,10 @@ export class ProfessionCardComponent implements OnInit {
     }
   }
 
+  getColorFirstLetter(color: string): string {
+    return color.split("")[0].toUpperCase();
+  }
+
   constructor() { }
 
   ngOnInit(): void {
