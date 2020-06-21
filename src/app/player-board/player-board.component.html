@@ -1,20 +1,27 @@
 <div class="player-board">
     <div>
-        <div class="hand">
-            <p>Player hand</p>
-            <app-profession-card *ngFor="let card of hand" [professionCard]="card"></app-profession-card>
-        </div>
-        <div class=guildhall>
-            <div>
+        <div class="guildhall">
+            <div >
                 <p>Incomplete chapters</p>
-                <app-chapter-incomplete *ngFor="let chapter of incompleteChapters" [incompleteChapter]="chapter"></app-chapter-incomplete>
+                <div class="card-row">
+                    <app-chapter-incomplete *ngFor="let chapter of incompleteChapters" [incompleteChapter]="chapter"></app-chapter-incomplete>
+                </div>
             </div>
-            <div>
+            <div >
                 <p>Complete chapters</p>
+                <div class="card-row">
+                    <app-chapter-complete *ngFor="let chapter of completeChapters" [completeChapter]="chapter"></app-chapter-complete>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Player hand</p>
+            <div class="hand">
+                <app-profession-card *ngFor="let card of hand" [professionCard]="card"></app-profession-card>
             </div>
         </div>
     </div>
-    <div>
+    <div class="vp-area">
         <p>
             VP Area
         </p>

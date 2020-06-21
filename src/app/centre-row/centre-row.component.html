@@ -1,6 +1,8 @@
 <div class="centre-row">
-    <p>Victory card array</p>
     <div>
-         <app-vp-card *ngFor="let vpCard of visibleVPDeck" [vpCard]="vpCard"></app-vp-card>
+        <app-profession-deck></app-profession-deck>
+    </div>
+    <div>
+        <app-vp-card *ngFor="let vpCard of visibleVPDeck" [vpCard]="vpCard"></app-vp-card>
     </div>
 </div>

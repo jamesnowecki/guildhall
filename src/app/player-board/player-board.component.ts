@@ -9,13 +9,13 @@ import { ProfessionCard } from '../templates/profession-card';
 })
 export class PlayerBoardComponent implements OnInit {
 
-  incompleteChapters: any = mockPlayer.guildhall.incompleteChapters
+  incompleteChapters: any = mockPlayer.guildhall.incompleteChapters;
+  completeChapters: any = mockPlayer.guildhall.completeChapters;
   hand: ProfessionCard[] = mockPlayer.hand;
   playerCards = mockPlayer;
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.playerCards.guildhall);
   }
 
 }

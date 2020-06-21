@@ -4,6 +4,6 @@
         <img src={{professionCard.image}}>
     </section>
     <div *ngFor="let ability of professionCard.abilityList">
-        <p *ngFor="let item of ability | keyvalue" class="ability">{{item.key}}: {{item.value}}</p>
+        <p *ngFor="let item of ability | keyvalue" class="ability"><span>{{item.key}}:</span> {{item.value}}</p>
     </div>
 </div>

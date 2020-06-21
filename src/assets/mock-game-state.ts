@@ -23,9 +23,9 @@ const completedChapter: ProfessionCard[] = [professionCards[20], professionCards
 const mockPlayer: any = {
     hand: shortProfessionArray, 
     guildhall: {
-                    incompleteChapters: [incompleteChapter1, incompleteChapter2],
-                    completeChapters: completedChapter,
-                    claimedVictoryCards: claimedVPCards
+                incompleteChapters: [incompleteChapter1, incompleteChapter2, incompleteChapter2, incompleteChapter1, incompleteChapter1, incompleteChapter1],
+                completeChapters: [completedChapter, completedChapter, completedChapter],
+                claimedVictoryCards: claimedVPCards
                 },
     victoryTokens: 4,
 };

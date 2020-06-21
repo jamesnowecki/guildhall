@@ -1,5 +1,8 @@
 .centre-row {
-    width: 50%;
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
     div {
         display: flex;
