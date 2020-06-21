@@ -1,5 +1,6 @@
 <div class="profession-card" [style.background-color]="getColor(professionCard.color)">
     <p>{{professionCard.profession}}</p>
+    <img src={{professionCard.image}} alt="">
     <div *ngFor="let ability of professionCard.abilityList">
         <p *ngFor="let item of ability | keyvalue">{{item.key}}: {{item.value}}</p>
     </div>

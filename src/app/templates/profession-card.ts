@@ -1,10 +1,3 @@
-import assassinPic from "../../assets/images/assassin.jpg";
-import traderPic from "../../assets/images/trader.jpg";
-import dancerPic from "../../assets/images/dancer.jpg";
-import weaverPic from "../../assets/images/weaver.png";
-import farmerPic from "../../assets/images/farmer.jpg";
-import historianPic from "../../assets/images/historian.jpg";
-
 
 export interface IProfessionCard {
     profession: string;
@@ -43,7 +36,7 @@ export class AssassinCard extends ProfessionCard {
         super(
             "Assassin",
             color,
-            assassinPic,
+            "assets/images/assassin.jpg",
            [
                {0: "Discard one card from one other player's guildhall"},
                {2: "Discard one card each from two different chapters of one other player's guildhall"},
@@ -70,7 +63,7 @@ export class FarmerCard extends ProfessionCard {
         super(
             "Farmer",
             color,
-            farmerPic,
+            "assets/images/farmer.jpg",
            [
                {1: "Gain one VP token"},
                {3: "Gain two VP tokens"},
@@ -92,7 +85,7 @@ export class HistorianCard extends ProfessionCard {
         super(
             "Historian",
             color,
-            historianPic,
+            "assets/images/historian.jpg",
            [
                {0: "Place the top card of the discard pile in your guildhall unless it is a duplicate"},
                {2: "Search discard pile and select one card, place it in your guildhall"},
@@ -119,7 +112,7 @@ export class TraderCard extends ProfessionCard {
         super(
             "Trader",
             color,
-            traderPic,
+            "assets/images/trader.jpg",
            [
                {0: "Swap one card in your guildhall with one from the guildhall of another player"},
                {2: "Swap two cards in your guildhall with two from the guildhall of another player"},
@@ -146,7 +139,7 @@ export class DancerCard extends ProfessionCard {
         super(
             "Dancer",
             color,
-            dancerPic,
+            "assets/images/dancer.jpg",
            [
                {"X": "Draw X cards where X is the number of dancers in your guildhall, then take another action"}
            ]
@@ -163,7 +156,7 @@ export class WeaverCard extends ProfessionCard {
         super(
             "Weaver",
             color,
-            weaverPic,
+            "assets/images/weaver.png",
            [
                {0: "Place 1 card from your hand into your guildhall"},
                {2: "Exchange 2 cards from your hand with 1 card from your guildhall"},
