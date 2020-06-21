@@ -15,7 +15,18 @@ export class PlayerBoardComponent implements OnInit {
   hand: ProfessionCard[] = mockPlayer.hand;
   VPArray: VPCard[] = mockPlayer.vpArray;
   playerCards = mockPlayer;
+  victoryTokens = mockPlayer.victoryTokens;
+  score: number = mockPlayer.victoryTokens + this.getCardScore(this.VPArray);
+
   constructor() { }
+
+  getCardScore(VPArray: VPCard[]): number {
+    let total: number = 0;
+    VPArray.forEach(card => {
+      total = total + card.value;
+    });
+    return total;
+  }
 
   ngOnInit(): void {
   }

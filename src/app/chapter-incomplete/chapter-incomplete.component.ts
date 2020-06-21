@@ -37,7 +37,6 @@ export class ChapterIncompleteComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.incompleteChapter)
   }
 
 }

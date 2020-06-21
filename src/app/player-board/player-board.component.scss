@@ -14,17 +14,13 @@
     .guildhall {
         border: 2px solid green;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
 
         div.card-row {
             display: flex;
             flex-direction: row; 
             justify-content: flex-start;
-            
-            // div {
-            //     padding: 0 2px;
-            // }
         }
     }
 
