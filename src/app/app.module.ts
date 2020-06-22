@@ -14,6 +14,8 @@ import { ChapterCompleteComponent } from './chapter-complete/chapter-complete.co
 import { OpponentBoardComponent } from './opponent-board/opponent-board.component';
 import { ClaimedVpCardComponent } from './claimed-vp-card/claimed-vp-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GameFrameComponent } from './game-frame/game-frame.component';
+import { TextSidebarComponent } from './text-sidebar/text-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     ChapterCompleteComponent,
     OpponentBoardComponent,
     ClaimedVpCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    GameFrameComponent,
+    TextSidebarComponent
   ],
   imports: [
     BrowserModule,

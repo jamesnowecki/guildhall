@@ -1,0 +1,10 @@
+.game-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .text-sidebar {
+        width: 400px;
+        height: 100%;
+    }
+}

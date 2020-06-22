@@ -1,14 +1,23 @@
 <div class="opponent-board">
-    <p>Opponent name</p>
-    <p>Hand: cards</p>
-    <div class="victory-area">
-        <p>
-            Victory area
-        </p>
-        <app-claimed-vp-card></app-claimed-vp-card>
+    <div class="upper-area">
+        <div>
+            <p>{{name}}</p>
+            <p>Hand: {{hand.length}} cards</p>
+            <p>Completed chapters: {{completeChapters.length}} </p>
+        </div>
+        <div class="vp-area">
+            <p>VP Area</p>
+            <div class="claimed-cards">
+                <app-claimed-vp-card *ngFor="let card of VPArray" [VPCard]="card" class="card"></app-claimed-vp-card>
+            </div>
+            <div class="score">
+                <p>VP tokens: {{victoryTokens}} </p>
+                <p>Total VP: {{score}}</p>
+            </div>
+        </div>
     </div>
+
     <div class="guildhall">
-        <p>Completed chapters: </p>
-        <app-chapter-incomplete></app-chapter-incomplete>
+        <app-chapter-incomplete *ngFor="let chapter of incompleteChapters" [incompleteChapter]="chapter" class="chapter"></app-chapter-incomplete>
     </div>
 </div>

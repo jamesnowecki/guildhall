@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import mockPlayer from "../../assets/mock-game-state";
+import { ProfessionCard } from '../templates/profession-card';
+import { VPCard } from '../templates/vp-card';
+
 
 @Component({
   selector: 'app-opponent-board',
@@ -7,7 +11,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OpponentBoardComponent implements OnInit {
 
+  incompleteChapters: any = mockPlayer.guildhall.incompleteChapters;
+  completeChapters: any = mockPlayer.guildhall.completeChapters;
+  hand: ProfessionCard[] = mockPlayer.hand;
+  VPArray: VPCard[] = mockPlayer.vpArray;
+  playerCards = mockPlayer;
+  victoryTokens = mockPlayer.victoryTokens;
+  score: number = mockPlayer.victoryTokens + this.getCardScore(this.VPArray);
+  name: string = mockPlayer.name
+
   constructor() { }
+
+  getCardScore(VPArray: VPCard[]): number {
+    let total: number = 0;
+    VPArray.forEach(card => {
+      total = total + card.value;
+    });
+    return total;
+  }
 
   ngOnInit(): void {
   }

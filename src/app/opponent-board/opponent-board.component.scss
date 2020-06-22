@@ -1,0 +1,41 @@
+.opponent-board {
+    width: 415px;
+    border: 2px solid black;
+
+    .upper-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .vp-area {
+            width: 205px;
+            border: 2px solid red;
+
+            .claimed-cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                
+                .card {
+                    width: 100px;
+                }
+            }
+
+            .score {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .guildhall {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        .chapter {
+            margin: 2px;
+        }
+    }
+}
