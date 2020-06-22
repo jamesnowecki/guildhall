@@ -21,6 +21,7 @@ const incompleteChapter2: ProfessionCard[] = [professionCards[20], professionCar
 const completedChapter: ProfessionCard[] = [professionCards[20], professionCards[24], professionCards[29], professionCards[34], professionCards[39]];
 
 const mockPlayer: any = {
+    name: "John Jimson",
     hand: shortProfessionArray, 
     guildhall: {
                 incompleteChapters: [incompleteChapter1, incompleteChapter2, incompleteChapter2, incompleteChapter1, incompleteChapter1, incompleteChapter1],

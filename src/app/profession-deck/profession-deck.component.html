@@ -1,13 +1,11 @@
 <div class="decks">
     <div>
-        <div class="profession-deck">
-            <p>Profession Deck</p>
-        </div>
-        <p>{{professionDeck.length}} cards remaining</p>
+        <div class="profession-deck"></div>
+        <p>Profession Deck ({{professionDeck.length}} cards)</p>
     </div>
 
     <div class="profession-deck-discard">
         <app-profession-card [professionCard]="professionDeckDiscardTopCard"></app-profession-card>
-        <p>Discards: {{professionDeckDiscard.length}} deep</p>
+        <p>Discards ({{professionDeckDiscard.length}} deep)</p>
     </div>
 </div>

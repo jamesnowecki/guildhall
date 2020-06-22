@@ -13,6 +13,7 @@ import { PlayerBoardComponent } from './player-board/player-board.component';
 import { ChapterCompleteComponent } from './chapter-complete/chapter-complete.component';
 import { OpponentBoardComponent } from './opponent-board/opponent-board.component';
 import { ClaimedVpCardComponent } from './claimed-vp-card/claimed-vp-card.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ClaimedVpCardComponent } from './claimed-vp-card/claimed-vp-card.compon
     PlayerBoardComponent,
     ChapterCompleteComponent,
     OpponentBoardComponent,
-    ClaimedVpCardComponent
+    ClaimedVpCardComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
