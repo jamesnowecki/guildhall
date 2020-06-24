@@ -6,24 +6,42 @@ export interface IPlayer {
     hand: ProfessionCard[];
     incompleteChapters: any;
     completeChapters: any;
-    claimedVictoryCards: VPCard[];
+    vpArray: VPCard[];
     victoryTokens: number;
 }
 
+export class Player implements IPlayer {
+    name: string;
+    hand: ProfessionCard[];
+    incompleteChapters: any;
+    completeChapters: any;
+    vpArray: VPCard[];
+    victoryTokens: number;
+
+    constructor(name: string, hand: ProfessionCard[], incompleteChapters: any, completeChapters: any, vpArray: VPCard[], victoryTokens: number) {
+       this.name = name;
+        this.hand = hand;
+        this.incompleteChapters = incompleteChapters;
+        this.completeChapters = completeChapters;
+        this.vpArray = vpArray;
+        this.victoryTokens = victoryTokens
+    }
+}
+
 export interface IGameState {
-    playerArray: IPlayer[],
+    playerArray: Player[],
     VPDeck: VPCard[],
     professionDeck: ProfessionCard[];
     professionDiscards: ProfessionCard[];
 }
 
 export class GameState implements IGameState {
-    playerArray: IPlayer[];
+    playerArray: Player[];
     VPDeck: VPCard[];
     professionDeck: ProfessionCard[];
     professionDiscards: ProfessionCard[];
 
-    constructor(playerArray: IPlayer[], VPDeck: VPCard[], professionDeck: ProfessionCard[], professionDiscards: ProfessionCard[]) {
+    constructor(playerArray: Player[], VPDeck: VPCard[], professionDeck: ProfessionCard[], professionDiscards: ProfessionCard[]) {
         this.playerArray = playerArray;
         this.VPDeck = VPDeck;
         this.professionDeck = professionDeck;
