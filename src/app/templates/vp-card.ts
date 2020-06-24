@@ -1,6 +1,6 @@
 export interface IVPCard {
-    cost: number,
-    value: number,
+    cost: number;
+    value: number;
     abilityText: string;
     spend: any;
 }

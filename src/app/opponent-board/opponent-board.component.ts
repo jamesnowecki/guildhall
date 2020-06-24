@@ -11,8 +11,8 @@ import { VPCard } from '../templates/vp-card';
 })
 export class OpponentBoardComponent implements OnInit {
 
-  incompleteChapters: any = mockPlayer.guildhall.incompleteChapters;
-  completeChapters: any = mockPlayer.guildhall.completeChapters;
+  incompleteChapters: any = mockPlayer.incompleteChapters;
+  completeChapters: any = mockPlayer.completeChapters;
   hand: ProfessionCard[] = mockPlayer.hand;
   VPArray: VPCard[] = mockPlayer.vpArray;
   playerCards = mockPlayer;

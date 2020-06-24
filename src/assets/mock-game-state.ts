@@ -23,13 +23,14 @@ const completedChapter: ProfessionCard[] = [professionCards[20], professionCards
 const mockPlayer: any = {
     name: "John Jimson",
     hand: shortProfessionArray, 
-    guildhall: {
-                incompleteChapters: [incompleteChapter1, incompleteChapter2, incompleteChapter2, incompleteChapter1, incompleteChapter1, incompleteChapter1],
-                completeChapters: [completedChapter, completedChapter, completedChapter],
-                claimedVictoryCards: claimedVPCards
-                },
+    incompleteChapters: [incompleteChapter1, incompleteChapter2, incompleteChapter2, incompleteChapter1, incompleteChapter1, incompleteChapter1],
+    completeChapters: [completedChapter],
     victoryTokens: 4,
     vpArray: claimedVPCards,
 };
 
 export default mockPlayer;
+
+const mockGameState: any = {
+    playerArray: []
+}
