@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import mockPlayer from "../../assets/mock-game-state";
+import { Component, OnInit, Input } from '@angular/core';
+// import mockPlayer from "../../assets/mock-game-state";
 import { ProfessionCard } from '../templates/profession-card';
 import { VPCard } from '../templates/vp-card';
+import { Player } from "../templates/game-classes";
+
 
 @Component({
   selector: 'app-player-board',
@@ -10,13 +12,15 @@ import { VPCard } from '../templates/vp-card';
 })
 export class PlayerBoardComponent implements OnInit {
 
-  incompleteChapters: any = mockPlayer.incompleteChapters;
-  completeChapters: any = mockPlayer.completeChapters;
-  hand: ProfessionCard[] = mockPlayer.hand;
-  VPArray: VPCard[] = mockPlayer.vpArray;
-  playerCards = mockPlayer;
-  victoryTokens = mockPlayer.victoryTokens;
-  score: number = mockPlayer.victoryTokens + this.getCardScore(this.VPArray);
+  @Input() primaryPlayer: Player;
+
+  incompleteChapters: any = this.primaryPlayer.incompleteChapters;
+  completeChapters: any = this.primaryPlayer.completeChapters;
+  hand: ProfessionCard[] = this.primaryPlayer.hand;
+  VPArray: VPCard[] = this.primaryPlayer.vpArray;
+  // playerCards = this.primaryPlayer;
+  victoryTokens = this.primaryPlayer.victoryTokens;
+  score: number = this.primaryPlayer.victoryTokens + this.getCardScore(this.VPArray);
 
   constructor() { }
 

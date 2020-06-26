@@ -1,8 +1,8 @@
 <div class="game-frame">
     <div>
-        <app-centre-row></app-centre-row>
-        <app-opponent-board></app-opponent-board>
-        <app-player-board></app-player-board>
+        <app-centre-row [VPDeck]="VPDeck" [professionDeck]="professionDeck" [professionDiscards]="professionDiscards"></app-centre-row>
+        <app-opponent-board *ngFor="let opponent of opponents" [opponent]="opponent"></app-opponent-board>
+        <app-player-board [primaryPlayer]="primaryPlayer"></app-player-board>
     </div>
     <div class="text-sidebar">
         <app-text-sidebar ></app-text-sidebar>
