@@ -11,9 +11,11 @@ export class ProfessionDeckComponent implements OnInit {
   @Input() professionDeck: ProfessionCard[];
   @Input() professionDiscards: ProfessionCard[];
 
-  professionDeckDiscardTopCard: ProfessionCard = this.professionDiscards[this.professionDiscards.length -1];
-
   constructor() { }
+
+  getTopCard(): ProfessionCard {
+    return this.professionDiscards[this.professionDiscards.length -1]
+  }
 
   ngOnInit(): void {
   }

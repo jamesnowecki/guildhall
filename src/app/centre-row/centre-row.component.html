@@ -3,6 +3,6 @@
         <app-profession-deck [professionDeck]="professionDeck" [professionDiscards]="professionDiscards"></app-profession-deck>
     </div>
     <div>
-        <app-vp-card *ngFor="let vpCard of visibleVPDeck" [vpCard]="vpCard"></app-vp-card>
+        <app-vp-card *ngFor="let vpCard of this.getTopFiveCards()" [vpCard]="vpCard"></app-vp-card>
     </div>
 </div>

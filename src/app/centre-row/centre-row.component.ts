@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-// import vpDeckUnshuffled from "../../assets/mock-vpcards";
 import { VPCard } from "../templates/vp-card";
 import { ProfessionCard } from '../templates/profession-card';
 
@@ -14,8 +13,8 @@ export class CentreRowComponent implements OnInit {
   @Input() professionDeck: ProfessionCard[];
   @Input() professionDiscards: ProfessionCard[];
 
-  vpDeck: VPCard[] = this.FYShuffle(this.VPDeck);
-  visibleVPDeck = this.vpDeck.slice(this.vpDeck.length - 5, this.vpDeck.length + 1 )
+  // vpDeck: VPCard[] = this.FYShuffle(this.VPDeck);
+  // visibleVPDeck = this.vpDeck.slice(this.vpDeck.length - 5, this.vpDeck.length + 1 )
 
   constructor() { }
 
@@ -27,8 +26,15 @@ export class CentreRowComponent implements OnInit {
 
     return array;
   }
+
+  getTopFiveCards(): VPCard[] {
+    return this.VPDeck.slice(this.VPDeck.length - 5, this.VPDeck.length + 1 )
+  }
   
 
   ngOnInit(): void {
+    console.log(this.VPDeck)
+    console.log(this.professionDeck)
+    console.log(this.professionDiscards)
   }
 }

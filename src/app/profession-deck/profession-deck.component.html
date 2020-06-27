@@ -5,7 +5,7 @@
     </div>
 
     <div class="profession-deck-discard">
-        <app-profession-card [professionCard]="professionDeckDiscardTopCard"></app-profession-card>
+        <app-profession-card [professionCard]="getTopCard()"></app-profession-card>
         <p>Discards ({{professionDiscards.length}} deep)</p>
     </div>
 </div>
