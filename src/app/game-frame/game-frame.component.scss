@@ -3,6 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
 
+    .opponents {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
     .text-sidebar {
         width: 400px;
         height: 100%;

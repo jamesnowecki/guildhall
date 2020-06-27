@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IVPCard, VPCard } from '../templates/vp-card';
+import { VPCard } from '../templates/vp-card';
 
 @Component({
   selector: 'app-vp-card',

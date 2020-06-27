@@ -23,6 +23,7 @@ export class GameFrameComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.mockGameState)
   }
 
 }

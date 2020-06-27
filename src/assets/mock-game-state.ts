@@ -33,19 +33,20 @@ const completedChapter: ProfessionCard[] = [professionCards[20], professionCards
 const mockPlayers: string[] = ["TheRockDoctor", "Sideburns", "TheFilthWizard", "JJ"];
 
 const createMockPlayerArray = (players: string[]): Player[] => {
-    let mockPlayerArray: Player[];
+    let mockPlayerArray: Player[] = [];
+    let newPlayer: Player;
 
     players.forEach(player => {
-        let newPlayer: Player = new Player(player, shortProfessionArray, [incompleteChapter1, incompleteChapter2], [completedChapter], claimedVPCards, 4)
+        newPlayer = new Player(player, shortProfessionArray, [incompleteChapter1, incompleteChapter2], [completedChapter], claimedVPCards, 4)
 
-        mockPlayerArray.push(newPlayer)
+        mockPlayerArray.push(newPlayer);
     })
 
     return mockPlayerArray;
 }
 
 const createMockGameState = (players: string[]): GameState => {
-    let mockGameState: GameState = new GameState(
+    const mockGameState: GameState = new GameState(
         createMockPlayerArray(players),
         vpCards,
         professionCards,

@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-// import mockPlayer from "../../assets/mock-game-state";
-import { ProfessionCard } from '../templates/profession-card';
 import { VPCard } from '../templates/vp-card';
 import { Player } from "../templates/game-classes";
 
@@ -14,13 +12,13 @@ export class PlayerBoardComponent implements OnInit {
 
   @Input() primaryPlayer: Player;
 
-  incompleteChapters: any = this.primaryPlayer.incompleteChapters;
-  completeChapters: any = this.primaryPlayer.completeChapters;
-  hand: ProfessionCard[] = this.primaryPlayer.hand;
-  VPArray: VPCard[] = this.primaryPlayer.vpArray;
-  // playerCards = this.primaryPlayer;
-  victoryTokens = this.primaryPlayer.victoryTokens;
-  score: number = this.primaryPlayer.victoryTokens + this.getCardScore(this.VPArray);
+  // incompleteChapters: any = this.primaryPlayer.incompleteChapters;
+  // completeChapters: any = this.primaryPlayer.completeChapters;
+  // hand: ProfessionCard[] = this.primaryPlayer.hand;
+  // VPArray: VPCard[] = this.primaryPlayer.vpArray;
+  // // playerCards = this.primaryPlayer;
+  // victoryTokens = this.primaryPlayer.victoryTokens;
+  // score: number = this.primaryPlayer.victoryTokens + this.getCardScore(this.VPArray);
 
   constructor() { }
 
@@ -30,6 +28,10 @@ export class PlayerBoardComponent implements OnInit {
       total = total + card.value;
     });
     return total;
+  }
+
+  getTotalScore(): number {
+    return this.primaryPlayer.victoryTokens + this.getCardScore(this.primaryPlayer.VPArray)
   }
 
   ngOnInit(): void {

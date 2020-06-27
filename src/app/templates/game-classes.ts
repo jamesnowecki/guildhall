@@ -6,7 +6,7 @@ export interface IPlayer {
     hand: ProfessionCard[];
     incompleteChapters: any;
     completeChapters: any;
-    vpArray: VPCard[];
+    VPArray: VPCard[];
     victoryTokens: number;
 }
 
@@ -15,7 +15,7 @@ export class Player implements IPlayer {
     hand: ProfessionCard[];
     incompleteChapters: any;
     completeChapters: any;
-    vpArray: VPCard[];
+    VPArray: VPCard[];
     victoryTokens: number;
 
     constructor(name: string, hand: ProfessionCard[], incompleteChapters: any, completeChapters: any, vpArray: VPCard[], victoryTokens: number) {
@@ -23,7 +23,7 @@ export class Player implements IPlayer {
         this.hand = hand;
         this.incompleteChapters = incompleteChapters;
         this.completeChapters = completeChapters;
-        this.vpArray = vpArray;
+        this.VPArray = vpArray;
         this.victoryTokens = victoryTokens
     }
 }

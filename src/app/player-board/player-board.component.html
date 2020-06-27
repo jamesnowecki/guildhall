@@ -4,20 +4,20 @@
             <div >
                 <p>Incomplete chapters</p>
                 <div class="card-row">
-                    <app-chapter-incomplete *ngFor="let chapter of incompleteChapters" [incompleteChapter]="chapter" class="chapter"></app-chapter-incomplete>
+                    <app-chapter-incomplete *ngFor="let chapter of primaryPlayer.incompleteChapters" [incompleteChapter]="chapter" class="chapter"></app-chapter-incomplete>
                 </div>
             </div>
             <div >
                 <p>Complete chapters</p>
                 <div class="card-row">
-                    <app-chapter-complete *ngFor="let chapter of completeChapters" [completeChapter]="chapter" class="chapter"></app-chapter-complete>
+                    <app-chapter-complete *ngFor="let chapter of primaryPlayer.completeChapters" [completeChapter]="chapter" class="chapter"></app-chapter-complete>
                 </div>
             </div>
         </div>
         <div>
             <p>Player hand</p>
             <div class="hand">
-                <app-profession-card *ngFor="let card of hand" [professionCard]="card" class="hand-card"></app-profession-card>
+                <app-profession-card *ngFor="let card of primaryPlayer.hand" [professionCard]="card" class="hand-card"></app-profession-card>
             </div>
         </div>
     </div>
@@ -26,9 +26,9 @@
             VP Area
         </p>
         <div>
-            <app-claimed-vp-card *ngFor="let card of VPArray" [VPCard]="card"></app-claimed-vp-card>
+            <app-claimed-vp-card *ngFor="let card of primaryPlayer.VPArray" [VPCard]="card"></app-claimed-vp-card>
         </div>
-        <p>VP tokens: {{victoryTokens}}</p>
-        <p>Total VP: {{score}}</p>
+        <p>VP tokens: {{primaryPlayer.victoryTokens}}</p>
+        <p>Total VP: {{getTotalScore()}}</p>
     </div>
 </div>
