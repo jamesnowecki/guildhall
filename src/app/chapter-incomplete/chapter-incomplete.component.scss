@@ -19,11 +19,11 @@
 
 
         div {
+            display: unset;
             width: 20px;
             height: 20px;
             margin-right: 20px;
             border-radius: 100%;
-            background-color: black;
             border: 2px solid black;
         }
     }

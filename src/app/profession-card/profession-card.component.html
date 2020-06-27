@@ -1,10 +1,16 @@
 <div class="profession-card" [style.background-color]="getColor(professionCard.color)">
+
+
+
     <div class="header">
         <div class="letter">
-            <p class="the-letter">{{getColorFirstLetter(professionCard.color)}}</p>
+            <p class="letter-inside">{{getColorFirstLetter(professionCard.color)}}</p>
         </div>
         <p>{{professionCard.profession}}</p>
     </div>
+
+
+
     <section>
         <img src={{professionCard.image}}>
     </section>
