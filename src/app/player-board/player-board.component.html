@@ -2,33 +2,39 @@
     <div>
         <div class="guildhall">
             <div >
-                <p>Incomplete chapters</p>
+                <p><span>Your incomplete chapters</span></p>
                 <div class="card-row">
                     <app-chapter-incomplete *ngFor="let chapter of primaryPlayer.incompleteChapters" [incompleteChapter]="chapter" class="chapter"></app-chapter-incomplete>
                 </div>
             </div>
             <div >
-                <p>Complete chapters</p>
+                <p><span>Your complete chapters</span></p>
                 <div class="card-row">
                     <app-chapter-complete *ngFor="let chapter of primaryPlayer.completeChapters" [completeChapter]="chapter" class="chapter"></app-chapter-complete>
                 </div>
             </div>
         </div>
         <div>
-            <p>Player hand</p>
+            <p><span>Your hand</span></p>
             <div class="hand">
                 <app-profession-card *ngFor="let card of primaryPlayer.hand" [professionCard]="card" class="hand-card"></app-profession-card>
             </div>
         </div>
     </div>
+    <div>
+        <p><span>Remaining actions:</span></p>
+        <button>Play a card from hand</button>
+        <button>Purchase VP card</button>
+        <button>Discard from hand to draw</button>
+    </div>
     <div class="vp-area">
         <p>
-            VP Area
+            <span>VP Area</span>
         </p>
         <div>
             <app-claimed-vp-card *ngFor="let card of primaryPlayer.VPArray" [VPCard]="card"></app-claimed-vp-card>
         </div>
-        <p>VP tokens: {{primaryPlayer.victoryTokens}}</p>
-        <p>Total VP: {{getTotalScore()}}</p>
+        <p>VP tokens: <span>{{primaryPlayer.victoryTokens}}</span></p>
+        <p>Total VP: <span>{{getTotalScore()}}</span></p>
     </div>
 </div>

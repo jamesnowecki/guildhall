@@ -1,9 +1,9 @@
 <div class="opponent-board">
     <div class="upper-area">
         <div>
-            <p>{{opponent.name}}</p>
-            <p>Hand: {{opponent.hand.length}} cards</p>
-            <p>Completed chapters: {{opponent.completeChapters.length}} </p>
+            <p><span>{{opponent.name}}</span></p>
+            <p>Hand: <span>{{opponent.hand.length}} cards</span></p>
+            <p>Completed chapters: <span>{{opponent.completeChapters.length}}</span></p>
         </div>
         <div class="vp-area">
             <p>VP Area</p>
@@ -11,8 +11,8 @@
                 <app-claimed-vp-card *ngFor="let card of opponent.VPArray" [VPCard]="card" class="card"></app-claimed-vp-card>
             </div>
             <div class="score">
-                <p>VP tokens: {{opponent.victoryTokens}} </p>
-                <p>Total VP: {{getTotalScore()}}</p>
+                <p>VP tokens: <span>{{opponent.victoryTokens}}</span> </p>
+                <p>Total VP: <span>{{getTotalScore()}}</span></p>
             </div>
         </div>
     </div>

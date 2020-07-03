@@ -14,17 +14,19 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: space-evenly;
-        // align-items: center;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
 
 
         div {
-            display: unset;
             width: 20px;
             height: 20px;
-            margin-right: 20px;
             border-radius: 100%;
             border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
