@@ -1,0 +1,16 @@
+<div>
+    <div *ngFor="card in professionCardArray">
+        <div>
+            <app-profession-card [professionCard]="card"></app-profession-card>
+            <input type="text">
+        </div>
+    </div>
+    <div>
+        <button>
+            Set order
+        </button>
+        <button>
+            Confirm
+        </button>
+    </div>
+</div>

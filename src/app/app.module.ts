@@ -16,6 +16,11 @@ import { ClaimedVpCardComponent } from './claimed-vp-card/claimed-vp-card.compon
 import { NavbarComponent } from './navbar/navbar.component';
 import { GameFrameComponent } from './game-frame/game-frame.component';
 import { TextSidebarComponent } from './text-sidebar/text-sidebar.component';
+import { OrderSelectorComponent } from './order-selector/order-selector.component';
+import { ChapterSelectorComponent } from './chapter-selector/chapter-selector.component';
+import { ButtonComponent } from './button/button.component';
+import { InputBoxComponent } from './input-box/input-box.component';
+import { CardSelectorComponent } from './card-selector/card-selector.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { TextSidebarComponent } from './text-sidebar/text-sidebar.component';
     ClaimedVpCardComponent,
     NavbarComponent,
     GameFrameComponent,
-    TextSidebarComponent
+    TextSidebarComponent,
+    OrderSelectorComponent,
+    ChapterSelectorComponent,
+    ButtonComponent,
+    InputBoxComponent,
+    CardSelectorComponent
   ],
   imports: [
     BrowserModule,
